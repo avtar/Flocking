@@ -28,11 +28,12 @@
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-contrib-uglify": "~0.3.2",
     "grunt-contrib-watch": "^0.6.1",
-    "sheep-benchmark": "colinbdclark/sheep.js"
+    "sheep-benchmark": "colinbdclark/sheep.js",
+    "saucie": "1.4.0"
   },
   "dependencies": {
     "jquery": "2.1.4",
-    "infusion": "2.0.0-dev.20160519T222603Z.754d2c6",
+    "infusion": "2.0.0-dev.20160309T145652Z.9f515ec",
     "codemirror-infusion": "colinbdclark/codemirror-infusion#gh-6",
     "jsplumb": "1.7.9",
     "dagre": "0.7.4",
@@ -44,6 +45,7 @@
   },
   "scripts": {
     "test": "npm run browser-test",
-    "browser-test": "testem ci --file tests/unit/testem.json"
+    "browser-test": "testem ci --file tests/unit/testem.json",
+    "sl-test": "vagrant ssh -c 'cd /home/vagrant/sync; testem ci --file tests/unit/testem-saucelabs.json'"
   }
 }

@@ -1,3 +1,12 @@
 node_modules
 bower_components
+npm-debug.log
 
+Vagrantfile.local
+.vagrant/
+playbook.retry
+secrets.yml
+
+testem.log
+sc_client.pid
+report.tap
