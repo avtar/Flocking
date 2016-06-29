@@ -8,5 +8,4 @@ playbook.retry
 secrets.yml
 
 testem.log
-sc_client.pid
 report.tap
